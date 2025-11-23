@@ -18,8 +18,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")                      -- Move up in buffe
 vim.keymap.set("n", "n", "nzzzv")                            -- Move to the next search result
 vim.keymap.set("n", "N", "Nzzzv")                            -- Move to the previous search result
 
-vim.keymap.set("x", "<leader>p", [["_dP]])                   -- Paste over selection without yanking it
-vim.keymap.set("v", "p", '"_dp', opts)                       -- Replace selection with paste without overwriting yank
+vim.keymap.set("x", "p", [["_dP]])                           -- Paste over selection without yanking it
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])           -- Delete without yanking
 vim.keymap.set({ "n", "v" }, "c", [["_c]], opts)             -- Change without yanking
 vim.keymap.set("n", "x", '"_x', opts)                        -- Delete character without yanking
@@ -40,11 +39,12 @@ vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally"
 vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
--- Split navigation
+-- Navigation
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+vim.keymap.set("n", "<C-p>", "<C-^>", { desc = "Switch to alternate file" })
 
 -- Other stuff
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })

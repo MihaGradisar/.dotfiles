@@ -35,7 +35,6 @@
 - `<C-u>`: Scroll up half page, center cursor
 - `n`: Next search result, center cursor
 - `N`: Previous search result, center cursor
-- `<leader>p`: Paste over selection without overwriting yank
 - `p`: Paste replacing selection without overwriting yank
 - `<leader>d`: Delete without yanking (normal and visual)
 - `c`: Change without yanking (normal and visual)
@@ -47,7 +46,7 @@
 - `<leader>m`: Split code Blocks
 ---
 
-## Split Management (Normal Mode)
+## Split Management and Navigation
 
 - `<leader>sv`: Split window vertically
 - `<leader>sh`: Split window horizontally
@@ -57,6 +56,7 @@
 - `<C-l>`: Move to right split
 - `<C-j>`: Move to below split
 - `<C-k>`: Move to above split
+- `<C-p>`: Switch to alternate file
 
 ---
 
