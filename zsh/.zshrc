@@ -112,6 +112,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# vim motions in terminal
+bindkey -v
+export KEYTIMEOUT=1
+
 # nvim
 alias vim="nvim"
 
@@ -138,3 +142,9 @@ source <(fzf --zsh)
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# fnm
+FNM_PATH="/opt/homebrew/opt/fnm/bin"
+if [ -d "$FNM_PATH" ]; then
+  eval "`fnm env`"
+fi
