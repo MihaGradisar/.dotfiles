@@ -143,6 +143,10 @@ return {
 		})
 		vim.lsp.enable("gopls")
 
+
+		vim.lsp.config("rust_analyzer", {})
+		vim.lsp.enable("rust_analyzer")
+
 		-- Vue: vue-language-server
 		vim.lsp.config("vue_ls", {})
 		vim.lsp.enable("vue_ls")

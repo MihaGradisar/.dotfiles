@@ -10,6 +10,9 @@ return {
 				-- go
 				go = { "goimports", "gofmt" },
 
+				-- rust
+				rust = { "rustfmt" },
+
 				-- Web technologies
 				javascript = { "prettier" },
 				typescript = { "prettier" },
