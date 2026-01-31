@@ -12,13 +12,17 @@ stow nvim
 
 This will create a symlink in ~/.config/nvim.
 
-### Dependencies
-- stow
-- fzf
-- zoxide
-- lazygit
+## Dependencies
 
----
+### Core (Required for Installation)
+- **Git**: Duh obviously! 
+- **GNU Stow**: Manages symlinks.
+- **CaskaydiaMono Nerd Font**: Required for Ghostty and Neovim icon support.
 
-Dotfiles are a work in progress.
-A more comprehensive README and install script will be added when I have time.
+### Runtime (Required for Configs)
+- **Oh My Zsh**: Required for theme and plugin management.
+- **Nvim**: fzf, fd, rg, lazygit
+- **Zsh**: fzf, zoxide
+- **Zsh Plugins**: zsh-autosuggestions, zsh-syntax-highlighting
+
+Install script will be added when I have time.
